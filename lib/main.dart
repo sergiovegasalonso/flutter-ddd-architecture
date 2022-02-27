@@ -1,17 +1,19 @@
 import 'package:flutter_ddd_architecture/ui/pages/main/main.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(new MyApp());
+void main() => runApp(const App());
 
-class MyApp extends StatelessWidget {
+class App extends StatelessWidget {
+  const App({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-    return new MaterialApp(
+    return MaterialApp(
       title: 'NavigationDrawer Demo',
-      theme: new ThemeData(
-        primarySwatch: Colors.blue,
+      theme: ThemeData(
+        primarySwatch: Colors.orange,
       ),
-      home: new HomePage(),
+      home: HomePage(),
     );
   }
 }
